@@ -4,25 +4,57 @@
     <meta charset="UTF-8" />
     <title>Dra. Dara Dantas · Portfólio Profissional</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fontes editoriais -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      }
+      .font-display {
+        font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+      }
+      /* Scroll suave para navegação interna */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
-  <body class="bg-slate-950 text-slate-50 font-sans">
-    <nav class="sticky top-0 z-30 backdrop-blur bg-slate-950/80 border-b border-slate-800">
+  <body class="bg-black text-slate-100">
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-30 backdrop-blur bg-black/85 border-b border-[#2b2620]">
       <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-        <div class="flex items-center gap-2">
-          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-emerald-400 to-cyan-400"></div>
-          <span class="font-semibold tracking-wide text-sm uppercase text-slate-200">
-            Dra. Dara Dantas · Advogada . Acadêmica . Escritora
+        <div class="flex items-center gap-3">
+          <!-- LOGO / SELO -->
+          <div class="w-10 h-10 rounded-full bg-[#1a1713] border border-[#b08c53] flex items-center justify-center overflow-hidden">
+            <!-- Trocar o src abaixo pelo arquivo final do selo/brasão -->
+            <img
+              src="selo-dara-dantas.png"
+              alt="Selo Dara Dantas"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <span class="font-display text-sm md:text-base tracking-[0.18em] uppercase text-[#d4af37]">
+            Dra. Dara Dantas · Advogada · Acadêmica · Escritora
           </span>
         </div>
-        <div class="flex gap-6 text-sm text-slate-200">
-          <a href="#inicio" class="hover:text-emerald-400 transition">Início</a>
-          <a href="#formacao" class="hover:text-emerald-400 transition">Formação Acadêmica</a>
-          <a href="#linha" class="hover:text-emerald-400 transition">Linha de Pesquisa</a>
-          <a href="#publicacoes" class="hover:text-emerald-400 transition">Publicações</a>
-          <a href="#eventos" class="hover:text-emerald-400 transition">Eventos</a>
-          <a href="#cv" class="hover:text-emerald-400 transition">Curriculum Vitae</a>
-          <a href="#contato" class="hover:text-emerald-400 transition">Contato</a>
+        <div class="hidden md:flex gap-6 text-xs md:text-sm text-slate-200 tracking-wide">
+          <a href="#inicio" class="hover:text-[#d4af37] transition">Início</a>
+          <a href="#sobre-mim" class="hover:text-[#d4af37] transition">Sobre mim</a>
+          <a href="#formacao" class="hover:text-[#d4af37] transition">Formação</a>
+          <a href="#linha" class="hover:text-[#d4af37] transition">Linha de Pesquisa</a>
+          <a href="#servicos" class="hover:text-[#d4af37] transition">Serviços</a>
+          <a href="#publicacoes" class="hover:text-[#d4af37] transition">Publicações</a>
+          <a href="#eventos" class="hover:text-[#d4af37] transition">Eventos</a>
+          <a href="#cv" class="hover:text-[#d4af37] transition">Curriculum Vitae</a>
+          <a href="#contato" class="hover:text-[#d4af37] transition">Contato</a>
         </div>
       </div>
     </nav>
@@ -30,51 +62,101 @@
     <main class="max-w-6xl mx-auto px-4 pb-16">
 
       <!-- HERO -->
-      <section id="inicio" class="grid md:grid-cols-[1.6fr,1fr] gap-10 items-center pt-10 pb-14 border-b border-slate-800">
+      <section
+        id="inicio"
+        class="grid md:grid-cols-[1.6fr,1fr] gap-10 items-center pt-10 pb-14 border-b border-[#2b2620]"
+      >
         <div class="space-y-5">
-          <p class="text-xs tracking-[0.25em] uppercase text-emerald-300/80">
+          <p class="text-[0.65rem] tracking-[0.35em] uppercase text-[#d4af37]/90 font-medium">
             Introdução ao Portfólio Profissional
           </p>
-          <h1 class="text-3xl md:text-4xl lg:text-4xl font-semibold leading-tight">
-            Especialista em Gestão do Caos; 
-            Contratos e Empresas, Negociação, Resolução de conflitos, Mediação e Arbitragem.
+          <h1 class="font-display text-3xl md:text-4xl lg:text-4xl font-semibold leading-tight text-slate-50">
+            Especialista em gestão do caos, contratos, empresas, negociação, resolução de conflitos, mediação e arbitragem.
           </h1>
           <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
-            Dara Dantas é advogada, escritora e investigadora luso-brasileira cuja trajetória articula prática jurídica, 
-            pesquisa interdisciplinar e sensibilidade humanista. A sua atuação centra-se no estudo da argumentação jurídica, 
-            da retórica aplicada ao conflito e dos efeitos epistemológicos da Inteligência Artificial sobre a tomada de decisão, 
-            a comunicação institucional e a formação de profissionais do Direito. Paralelamente, desenvolve interesse académico 
-            e prático em mediação e arbitragem, analisando como estratégias discursivas, dinâmicas argumentativas e modelos 
+            Dara Dantas é advogada, escritora e investigadora luso-brasileira cuja trajetória articula prática jurídica,
+            pesquisa interdisciplinar e sensibilidade humanista. A sua atuação centra-se no estudo da argumentação jurídica,
+            da retórica aplicada ao conflito e dos efeitos epistemológicos da Inteligência Artificial sobre a tomada de decisão,
+            a comunicação institucional e a formação de profissionais do Direito. Paralelamente, desenvolve interesse académico
+            e prático em mediação e arbitragem, analisando como estratégias discursivas, dinâmicas argumentativas e modelos
             comunicacionais influenciam a construção de consensos, a gestão de divergências e a qualidade das soluções negociadas.
-            O seu trabalho combina rigor conceptual, atenção às nuances da linguagem e preocupação com os riscos provenientes de 
-            práticas automatizadas e não refletidas. Além da pesquisa jurídica, mantém atividade como escritora literária, onde 
-            explora dimensões éticas, humanas e narrativas que dialogam com a sua investigação sobre linguagem, conflito e experiência 
-            social. Essa interseção entre técnica, cultura e humanidade orienta uma abordagem crítica, cuidadosa e comprometida com 
-            práticas profissionais mais responsáveis, claras e sensíveis aos impactos que diferentes formas de discurso podem gerar 
+            O seu trabalho combina rigor conceptual, atenção às nuances da linguagem e preocupação com os riscos provenientes de
+            práticas automatizadas e não refletidas. Além da pesquisa jurídica, mantém atividade como escritora literária, onde
+            explora dimensões éticas, humanas e narrativas que dialogam com a sua investigação sobre linguagem, conflito e experiência
+            social. Essa interseção entre técnica, cultura e humanidade orienta uma abordagem crítica, cuidadosa e comprometida com
+            práticas profissionais mais responsáveis, claras e sensíveis aos impactos que diferentes formas de discurso podem gerar
             na vida das pessoas.
           </p>
         </div>
 
         <div class="flex justify-center md:justify-end">
           <div class="relative w-48 h-48 md:w-56 md:h-56">
-            <div class="absolute -inset-1 rounded-full bg-gradient-to-br from-emerald-400 via-cyan-400 to-fuchsia-400 blur"></div>
-            <div class="relative w-full h-full rounded-full bg-slate-900 border border-slate-700 overflow-hidden">
+            <div class="absolute -inset-[3px] rounded-full bg-[#d4af37]/40 blur-sm"></div>
+            <div class="relative w-full h-full rounded-full bg-gradient-to-b from-[#1b1610] to-black border border-[#b08c53] overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.75)]">
               <img src="dara-perfil.jpeg" alt="Dra. Dara Dantas" class="w-full h-full object-cover" />
             </div>
           </div>
         </div>
       </section>
 
-            <!-- FORMACAO -->
-      <section id="formacao" class="py-10 border-b border-slate-800 space-y-6">
-        <h2 class="text-2xl font-semibold">Formação Acadêmica</h2>
+      <!-- SOBRE MIM (CONSULTIVO/EMPRESARIAL) -->
+      <section id="sobre-mim" class="py-12 border-b border-[#2b2620] space-y-6">
+        <h2 class="font-display text-2xl font-semibold text-slate-50">Sobre mim</h2>
+
+        <p class="text-sm md:text-base text-slate-300 max-w-3xl leading-relaxed">
+          Atuo na interseção entre Direito, gestão e análise estratégica. A minha prática combina experiência em ambientes
+          institucionais complexos, mercado imobiliário e projetos de reorganização contratual com investigação em retórica
+          jurídica e impacto da Inteligência Artificial na tomada de decisão. Em termos práticos, ajudo pessoas e organizações
+          a transformar cenários de desordem, excesso de informação e conflito em estruturas mais claras, negociáveis e
+          operacionalmente sustentáveis.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8 text-sm">
+          <div>
+            <h3 class="font-semibold text-slate-100 mb-2 text-xs uppercase tracking-[0.18em]">
+              Posicionamento
+            </h3>
+            <p class="text-slate-300 leading-relaxed">
+              Trabalho com foco em eficiência decisória: organizo fatos, documentos, fluxos e expectativas para que decisões
+              jurídicas e empresariais possam ser tomadas com maior clareza, menor improvisação e melhor alinhamento entre
+              risco, interesse e capacidade real de execução.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-slate-100 mb-2 text-xs uppercase tracking-[0.18em]">
+              Abordagem
+            </h3>
+            <p class="text-slate-300 leading-relaxed">
+              Integro análise jurídica, leitura discursiva e visão organizacional. Isso significa olhar para contratos, normas
+              e procedimentos ao mesmo tempo em que observo como as pessoas comunicam, implementam e interpretam essas estruturas
+              no dia a dia. O objetivo é reduzir ruído, litígios desnecessários e retrabalho.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-slate-100 mb-2 text-xs uppercase tracking-[0.18em]">
+              Diferenciais
+            </h3>
+            <ul class="list-disc ml-5 space-y-1 text-slate-300 leading-relaxed">
+              <li>Experiência combinada em escritório, instituição de grande porte e mercado imobiliário.</li>
+              <li>Atuação entre Brasil e Portugal, com leitura comparada de práticas jurídicas e organizacionais.</li>
+              <li>Visão simultânea de front office (decisão) e backoffice (processos, documentação e execução).</li>
+              <li>Trabalho orientado à redução de risco e ao fortalecimento da governança contratual e patrimonial.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMAÇÃO -->
+      <section id="formacao" class="py-10 border-b border-[#2b2620] space-y-6">
+        <h2 class="font-display text-2xl font-semibold text-slate-50">Formação Acadêmica</h2>
         <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
-          Descreve-se sua trajetória académica, estruturada por formação superior em Direito e por estudos avançados desenvolvidos em ambiente universitário de elevada exigência 
+          Descreve-se sua trajetória académica, estruturada por formação superior em Direito e por estudos avançados desenvolvidos em ambiente universitário de elevada exigência
           científica, o que revela um perfil profissional tecnicamente robusto, intelectualmente disciplinado e comprometido com a produção de conhecimento rigoroso e socialmente relevante.
         </p>
 
         <div class="grid md:grid-cols-1 gap-10 text-sm">
-
           <div>
             <h3 class="font-semibold text-slate-100 mb-2">Graduações e Especializações</h3>
             <ul class="list-disc ml-5 space-y-1 text-slate-300">
@@ -100,14 +182,15 @@
               <li>Iniciando um Pequeno Grande Negócio na Internet - Sebrae - 2004</li>
             </ul>
           </div>
+        </div>
       </section>
-      
+
       <!-- LINHA DE PESQUISA -->
-      <section id="linha" class="py-10 border-b border-slate-800 space-y-6">
-        <h2 class="text-2xl font-semibold">Linha de Investigação</h2>
+      <section id="linha" class="py-10 border-b border-[#2b2620] space-y-6">
+        <h2 class="font-display text-2xl font-semibold text-slate-50">Linha de Investigação</h2>
         <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
           Sua linha de investigação articula tradição retórica clássica, argumentação jurídica contemporânea e análise crítica das transformações trazidas pela IA. O foco recai sobre os efeitos
-          estruturais da deficiência lógico‑retórica no ensino jurídico e sobre sua repercussão na fundamentação de decisões, na negociação, na mediação e na comunicação institucional.
+          estruturais da deficiência lógico-retórica no ensino jurídico e sobre sua repercussão na fundamentação de decisões, na negociação, na mediação e na comunicação institucional.
         </p>
 
         <div class="grid md:grid-cols-2 gap-6 text-sm">
@@ -132,22 +215,121 @@
               <li>Contribuir para um Direito mais claro, seguro e humanizado.</li>
             </ul>
           </div>
+        </div>
       </section>
 
-      <!-- PUBLICAÇÕES: OS 20 ARTIGOS -->
-      <section id="publicacoes" class="py-10 border-b border-slate-800 space-y-6">
-        <h2 class="text-2xl font-semibold">Publicações e Projetos</h2>
+      <!-- SERVIÇOS (CONSULTIVO/EMPRESARIAL) -->
+      <section id="servicos" class="py-12 border-b border-[#2b2620] space-y-6">
+        <h2 class="font-display text-2xl font-semibold text-slate-50">Serviços</h2>
+
+        <p class="text-sm md:text-base text-slate-300 max-w-3xl leading-relaxed">
+          A partir da experiência em contextos jurídicos, institucionais e empresariais, atuo na organização de informação,
+          revisão de estruturas contratuais, desenho de rotinas e apoio à tomada de decisão. O objetivo é reduzir ruídos,
+          riscos desnecessários e improvisações, fortalecendo a governança e a clareza dos compromissos assumidos.
+        </p>
+
+        <!-- Navegação interna dos serviços -->
+        <div class="flex flex-wrap gap-3 text-xs md:text-sm mt-4">
+          <a href="#servico-contratos" class="px-3 py-1.5 rounded-full border border-[#d4af37]/70 text-[#d4af37] hover:bg-[#d4af37]/10 transition">
+            Contratos e Empresa
+          </a>
+          <a href="#servico-patrimonial" class="px-3 py-1.5 rounded-full border border-[#2b2620] text-slate-300 hover:border-[#d4af37]/60 hover:text-[#d4af37] transition">
+            Planejamento Patrimonial e Imobiliário
+          </a>
+          <a href="#servico-pesquisa" class="px-3 py-1.5 rounded-full border border-[#2b2620] text-slate-300 hover:border-[#d4af37]/60 hover:text-[#d4af37] transition">
+            Pesquisa e Produção Intelectual
+          </a>
+          <a href="#servico-mentoria" class="px-3 py-1.5 rounded-full border border-[#2b2620] text-slate-300 hover:border-[#d4af37]/60 hover:text-[#d4af37] transition">
+            Formação e Mentoria
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 text-sm mt-6">
+          <!-- Serviço 1 -->
+          <article id="servico-contratos" class="border border-[#2b2620] bg-[#0c0b09]/70 rounded-xl p-5 shadow-sm">
+            <h3 class="font-semibold text-slate-50 mb-1">
+              Consultoria jurídico-estratégica em contratos e empresa
+            </h3>
+            <p class="text-slate-300 mb-2">
+              Apoio a empresas e profissionais na leitura, revisão e reestruturação de relações contratuais, com foco em
+              clareza, equilíbrio e operacionalidade. O objetivo não é apenas “corrigir cláusulas”, mas alinhar texto,
+              prática e expectativa, reduzindo litígios e incertezas.
+            </p>
+            <ul class="list-disc ml-5 space-y-1 text-slate-300">
+              <li>Análise técnica e estratégica de contratos civis e empresariais.</li>
+              <li>Identificação de riscos, lacunas e assimetrias de informação.</li>
+              <li>Propostas de ajustes e modelos mais coerentes com a realidade do negócio.</li>
+              <li>Suporte à organização de fluxos contratuais e rotinas internas de controlo.</li>
+            </ul>
+          </article>
+
+          <!-- Serviço 2 -->
+          <article id="servico-patrimonial" class="border border-[#2b2620] bg-[#0c0b09]/70 rounded-xl p-5 shadow-sm">
+            <h3 class="font-semibold text-slate-50 mb-1">
+              Planejamento patrimonial e imobiliário
+            </h3>
+            <p class="text-slate-300 mb-2">
+              Organização jurídica e documental de património, com foco em estruturação de ativos, sucessão e coerência
+              entre decisões familiares, empresariais e imobiliárias. A atuação é orientada à prevenção de conflitos e à
+              criação de estruturas compreensíveis e executáveis.
+            </p>
+            <ul class="list-disc ml-5 space-y-1 text-slate-300">
+              <li>Levantamento e sistematização de documentação imobiliária e contratual.</li>
+              <li>Análise de cenários sucessórios e patrimoniais com visão prudencial.</li>
+              <li>Apoio conceptual em decisões envolvendo doação, usufruto, holdings e SPEs.</li>
+              <li>Integração entre visão jurídica, operacional e organizacional dos ativos.</li>
+            </ul>
+          </article>
+
+          <!-- Serviço 3 -->
+          <article id="servico-pesquisa" class="border border-[#2b2620] bg-[#0c0b09]/70 rounded-xl p-5 shadow-sm">
+            <h3 class="font-semibold text-slate-50 mb-1">
+              Pesquisa, escrita e produção intelectual aplicada
+            </h3>
+            <p class="text-slate-300 mb-2">
+              Desenvolvimento de estudos, relatórios e textos estratégicos em temas de retórica jurídica, tecnologia, ensino
+              jurídico e linguagem do conflito, com foco na aplicação prática em decisões, políticas internas e comunicação institucional.
+            </p>
+            <ul class="list-disc ml-5 space-y-1 text-slate-300">
+              <li>Pesquisa aplicada em temas jurídicos, organizacionais e tecnológicos específicos.</li>
+              <li>Elaboração de relatórios, notas técnicas e materiais de apoio à decisão.</li>
+              <li>Apoio à escrita acadêmica e institucional com ênfase em lógica e clareza.</li>
+              <li>Análise crítica de impactos da IA em rotinas jurídicas e comunicacionais.</li>
+            </ul>
+          </article>
+
+          <!-- Serviço 4 -->
+          <article id="servico-mentoria" class="border border-[#2b2620] bg-[#0c0b09]/70 rounded-xl p-5 shadow-sm">
+            <h3 class="font-semibold text-slate-50 mb-1">
+              Formação e mentoria em argumentação jurídica
+            </h3>
+            <p class="text-slate-300 mb-2">
+              Apoio a estudantes, jovens profissionais e equipas na estruturação de raciocínios, peças, apresentações e
+              negociações, com foco em clareza, coerência e responsabilidade no uso de ferramentas tecnológicas.
+            </p>
+            <ul class="list-disc ml-5 space-y-1 text-slate-300">
+              <li>Mentoria em escrita jurídica, apresentações e comunicação estratégica.</li>
+              <li>Formação em retórica aplicada, tipos de auditório e construção de autoridade.</li>
+              <li>Discussão crítica sobre limites e usos responsáveis de IA na prática jurídica.</li>
+              <li>Programas sob medida para equipas em contextos de alta complexidade comunicacional.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- PUBLICAÇÕES -->
+      <section id="publicacoes" class="py-10 border-b border-[#2b2620] space-y-6">
+        <h2 class="font-display text-2xl font-semibold text-slate-50">Publicações e Projetos</h2>
         <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
           Segue-se projetos de artigos investigativos estruturados em quatro partes temáticas: fundamentos retóricos, conflito e pragmática, tecnologia e epistemologia jurídica, e propostas de reforma do ensino jurídico.
         </p>
 
         <div class="grid md:grid-cols-2 gap-10 text-sm">
-
           <div>
             <h3 class="font-semibold text-slate-100 mb-2">Parte I · Fundamentos Retóricos</h3>
             <ul class="list-disc ml-5 space-y-1 text-slate-300">
               <li>A retórica do foro à era algorítmica.</li>
-              <li>Deficiência lógico‑retórica no ensino jurídico.</li>
+              <li>Deficiência lógico-retórica no ensino jurídico.</li>
               <li>Retórica da negociação: ethos, pathos e logos em conflito.</li>
               <li>Linguagem clara, capital linguístico e desigualdade comunicativa.</li>
               <li>Silogismo jurídico, narrativa e construção da autoridade.</li>
@@ -167,60 +349,70 @@
               <li>Escrita jurídica assistida por IA.</li>
               <li>Linguística forense e credibilidade discursiva.</li>
               <li>Retórica digital e escrita eletrônica.</li>
-              <li>Currículos jurídico‑argumentativos.</li>
+              <li>Currículos jurídico-argumentativos.</li>
               <li>Retórica, gênero e autoridade jurídica.</li>
-              <li>Proposta de reforma lógico‑retórica do ensino luso‑brasileiro.</li>
+              <li>Proposta de reforma lógico-retórica do ensino luso-brasileiro.</li>
             </ul>
           </div>
+        </div>
 
-           <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
-             Para além das pesquisas jurídicas, segue-se alguns artigos publicados em revistas de grande circulação em perspectivas diversas
+        <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
+          Para além das pesquisas jurídicas, segue-se alguns artigos publicados em revistas de grande circulação em perspectivas diversas
         </p>
 
         <div class="grid md:grid-cols-1 gap-10 text-sm">
-
-         <div>
+          <div>
             <h3 class="font-semibold text-slate-100 mb-2">Revistas Científicas</h3>
             <ul class="list-disc ml-5 space-y-1 text-slate-300">
-               <a href="https://revistarevolua.emnuvens.com.br/revista/article/view/5"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                 <li>Dantas, D. J. P. (2022). A saúde mental pós pandemia pela COVID-19. Revista REVOLUA, 1(1), 6–10.</li></a>
-              <a href="https://repositorio.ucb.br:9443/jspui/handle/10869/4085"
-            target="_blank"
-                rel="noopener noreferrer">
-                <li>A DEFICIÊNCIA DA FORMAÇÃO LÓGICO RETÓRICA NO ENSINO JURÍDICO BRASILEIRO, UNIVERSIDADE CATÓLICA DE BRASÍLIA – 10/2009 – Monografia apresentada para conclusão 
-                da graduação em Direito, a qual versa sobre a deficiência da formação lógico-retórica no ensino jurídico brasileiro e seu impacto na vida profissional dos operadores do direito.</li></a>
+              <a
+                href="https://revistarevolua.emnuvens.com.br/revista/article/view/5"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <li>
+                  Dantas, D. J. P. (2022). A saúde mental pós pandemia pela COVID-19. Revista REVOLUA, 1(1), 6–10.
+                </li>
+              </a>
+              <a
+                href="https://repositorio.ucb.br:9443/jspui/handle/10869/4085"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <li>
+                  A DEFICIÊNCIA DA FORMAÇÃO LÓGICO RETÓRICA NO ENSINO JURÍDICO BRASILEIRO, UNIVERSIDADE CATÓLICA DE BRASÍLIA – 10/2009 – Monografia apresentada para conclusão
+                  da graduação em Direito, a qual versa sobre a deficiência da formação lógico-retórica no ensino jurídico brasileiro e seu impacto na vida profissional dos operadores do direito.
+                </li>
+              </a>
             </ul>
           </div>
-          
+
           <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
             Na área literária, segue-se:
-        </p>
+          </p>
 
-        <div class="grid md:grid-cols-1 gap-10 text-sm">
-          
-          <div>
-            <h3 class="font-semibold text-slate-100 mb-2">Trilogia Digressões - Além do que se vê!</h3>
-            <ul class="list-disc ml-5 space-y-1 text-slate-300">
-              <li>LIVRO DIGRESSÕES – 07/2022 – ISBN: 978-65-89916-51-2 – Um livro de reflexões sobre o cotidiano que move a vida humana. Literatura Brasileira.</li>
-            </ul>
+          <div class="grid md:grid-cols-1 gap-10 text-sm">
+            <div>
+              <h3 class="font-semibold text-slate-100 mb-2">Trilogia Digressões - Além do que se vê!</h3>
+              <ul class="list-disc ml-5 space-y-1 text-slate-300">
+                <li>
+                  LIVRO DIGRESSÕES – 07/2022 – ISBN: 978-65-89916-51-2 – Um livro de reflexões sobre o cotidiano que move a vida humana. Literatura Brasileira.
+                </li>
+              </ul>
+            </div>
           </div>
-          
         </div>
       </section>
-          
+
       <!-- EVENTOS -->
-      <section id="eventos" class="py-10 border-b border-slate-800 space-y-6">
-        <h2 class="text-2xl font-semibold">Participações e Eventos</h2>
+      <section id="eventos" class="py-10 border-b border-[#2b2620] space-y-6">
+        <h2 class="font-display text-2xl font-semibold text-slate-50">Participações e Eventos</h2>
         <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
           Acrescem ainda diversas participações em eventos científicos, congressos especializados e oficinas formativas, experiências que não apenas ampliaram, e continuam a ampliar de forma
-          expressiva, o horizonte epistemológico e a maturidade crítica, mas que também consolidaram um percurso de aprendizagem permanente, diálogo interdisciplinar e 
+          expressiva, o horizonte epistemológico e a maturidade crítica, mas que também consolidaram um percurso de aprendizagem permanente, diálogo interdisciplinar e
           enriquecimento significativo das práticas investigativas e profissionais.
         </p>
 
         <div class="grid md:grid-cols-1 gap-10 text-sm">
-
           <div>
             <h3 class="font-semibold text-slate-100 mb-2">Congressos e Encontros Jurídicos</h3>
             <ul class="list-disc ml-5 space-y-1 text-slate-300">
@@ -229,57 +421,69 @@
               <li>III Congresso Ibero-Americano sobre Direito e Técnologias Digitais - Uminho</li>
             </ul>
           </div>
+        </div>
       </section>
-          
+
       <!-- CV -->
-      <section id="cv" class="py-10 border-b border-slate-800 space-y-6">
-        <h2 class="text-2xl font-semibold">Curriculum Vitae – Síntese</h2>
+      <section id="cv" class="py-10 border-b border-[#2b2620] space-y-6">
+        <h2 class="font-display text-2xl font-semibold text-slate-50">Curriculum Vitae – Síntese</h2>
         <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
-          Dara Dantas é advogada (OAB/DF 35352), pesquisadora e estrategista organizacional, com mais de dez anos de experiência em ambientes institucionais complexos e em contextos de elevada exigência operacional. 
-          Graduada em Direito pela Universidade Católica de Brasília, onde defendeu o estudo A deficiência da formação lógico-retórica no ensino jurídico brasileiro (2009), consolidou desde cedo uma abordagem profissional centrada 
-          na racionalidade argumentativa, na clareza comunicativa e na capacidade de gerir estruturas organizacionais marcadas por grande volume de decisões, informação e conflito.</p>
-        
+          Dara Dantas é advogada (OAB/DF 35352), pesquisadora e estrategista organizacional, com mais de dez anos de experiência em ambientes institucionais complexos e em contextos de elevada exigência operacional.
+          Graduada em Direito pela Universidade Católica de Brasília, onde defendeu o estudo A deficiência da formação lógico-retórica no ensino jurídico brasileiro (2009), consolidou desde cedo uma abordagem profissional centrada
+          na racionalidade argumentativa, na clareza comunicativa e na capacidade de gerir estruturas organizacionais marcadas por grande volume de decisões, informação e conflito.
+        </p>
+
         <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
-          Iniciou sua carreira no escritório Ferreira e Gomes Associados, desenvolvendo bases sólidas em gestão documental, controlo de prazos, organização processual e manutenção de fluxos administrativos estruturados. Posteriormente, 
-          construiu trajetória ampla e consolidada na Campanha Nacional de Escolas da Comunidade (CNEC), onde atuou em mais de 800 processos distribuídos por múltiplas jurisdições brasileiras, assumindo atividades que exigiam análise de 
-          risco, coordenação de carteira, racionalidade processual e atuação multiterritorial.</p>
-        
+          Iniciou sua carreira no escritório Ferreira e Gomes Associados, desenvolvendo bases sólidas em gestão documental, controlo de prazos, organização processual e manutenção de fluxos administrativos estruturados. Posteriormente,
+          construiu trajetória ampla e consolidada na Campanha Nacional de Escolas da Comunidade (CNEC), onde atuou em mais de 800 processos distribuídos por múltiplas jurisdições brasileiras, assumindo atividades que exigiam análise de
+          risco, coordenação de carteira, racionalidade processual e atuação multiterritorial.
+        </p>
+
         <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
-          Sua experiência evoluiu para funções de supervisão e gestão, tendo assumido o comando do Setor de Imóveis da CNEC, onde liderou equipas multidisciplinares, administrou um extenso portfólio de ativos e conduziu projetos de eficiência 
-          operacional, governança patrimonial e otimização de rotinas administrativas e jurídicas. A combinação entre experiência jurídica e competências de gestão tornou-se uma de suas marcas estruturantes.</p>
-        
+          Sua experiência evoluiu para funções de supervisão e gestão, tendo assumido o comando do Setor de Imóveis da CNEC, onde liderou equipas multidisciplinares, administrou um extenso portfólio de ativos e conduziu projetos de eficiência
+          operacional, governança patrimonial e otimização de rotinas administrativas e jurídicas. A combinação entre experiência jurídica e competências de gestão tornou-se uma de suas marcas estruturantes.
+        </p>
+
         <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
-          Paralelamente, atuou no mercado imobiliário após concluir o Curso Técnico em Transações Imobiliárias, contribuindo para o aumento das taxas de captação, aperfeiçoamento do relacionamento com clientes e melhoria dos ciclos de atendimento na 
-          Habitar Imóveis. Essa vivência ampliou seu domínio sobre a dinâmica do setor, fortalecendo competências em interlocução estratégica, prospecção, análise de documentação e tomada de decisão orientada ao detalhe.</p>
-        
+          Paralelamente, atuou no mercado imobiliário após concluir o Curso Técnico em Transações Imobiliárias, contribuindo para o aumento das taxas de captação, aperfeiçoamento do relacionamento com clientes e melhoria dos ciclos de atendimento na
+          Habitar Imóveis. Essa vivência ampliou seu domínio sobre a dinâmica do setor, fortalecendo competências em interlocução estratégica, prospecção, análise de documentação e tomada de decisão orientada ao detalhe.
+        </p>
+
         <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
-          Além da trajetória jurídica e empresarial, é autora e produtora intelectual, com publicações literárias e acadêmicas que refletem sua atenção à lógica, à retórica, à comunicação estratégica e ao comportamento humano. Entre seus trabalhos, 
-          destacam-se o livro Digressões – Além do que se vê! e artigos sobre saúde mental, subjetividade e crise. Suas formações complementares em liderança, negociação, comunicação persuasiva e análise de dados (Excel e Power BI) reforçam uma visão 
-          transversal capaz de integrar técnica, estratégia e organização.</p>
-        
+          Além da trajetória jurídica e empresarial, é autora e produtora intelectual, com publicações literárias e acadêmicas que refletem sua atenção à lógica, à retórica, à comunicação estratégica e ao comportamento humano. Entre seus trabalhos,
+          destacam-se o livro Digressões – Além do que se vê! e artigos sobre saúde mental, subjetividade e crise. Suas formações complementares em liderança, negociação, comunicação persuasiva e análise de dados (Excel e Power BI) reforçam uma visão
+          transversal capaz de integrar técnica, estratégia e organização.
+        </p>
+
         <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
-          Atualmente reside em Braga, Portugal, onde frequenta o Mestrado em Direito dos Contratos e da Empresa, na Universidade do Minho, aprofundando estudos sobre racionalidade contratual, estruturas empresariais e impacto da Inteligência Artificial na dinâmica 
-          jurídica e organizacional contemporânea. Em Portugal, ampliou ainda mais sua trajetória mediante atuação em funções administrativas, operacionais e de backoffice, com foco em gestão de processos, documentação, atendimento, logística e restauração, o que fortaleceu 
-          sua adaptabilidade, resiliência, capacidade de aprendizagem rápida e visão multicultural.</p>
-        
+          Atualmente reside em Braga, Portugal, onde frequenta o Mestrado em Direito dos Contratos e da Empresa, na Universidade do Minho, aprofundando estudos sobre racionalidade contratual, estruturas empresariais e impacto da Inteligência Artificial na dinâmica
+          jurídica e organizacional contemporânea. Em Portugal, ampliou ainda mais sua trajetória mediante atuação em funções administrativas, operacionais e de backoffice, com foco em gestão de processos, documentação, atendimento, logística e restauração, o que fortaleceu
+          sua adaptabilidade, resiliência, capacidade de aprendizagem rápida e visão multicultural.
+        </p>
+
         <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
-          Seu percurso, somado a uma experiência consolidada em ambientes de elevada complexidade e movimento contínuo, faz dela uma profissional reconhecida pela organização rigorosa, capacidade de gestão de informação, resolução de problemas orientada a resultados e atuação 
-          colaborativa. A combinação entre advocacia, gestão institucional, experiência internacional, produção intelectual e competências analíticas posiciona-a como uma profissional versátil, estratégica e capaz de transitar entre o jurídico, o administrativo e o empresarial com elevada 
-          competência técnica e humana.</p>
+          Seu percurso, somado a uma experiência consolidada em ambientes de elevada complexidade e movimento contínuo, faz dela uma profissional reconhecida pela organização rigorosa, capacidade de gestão de informação, resolução de problemas orientada a resultados e atuação
+          colaborativa. A combinação entre advocacia, gestão institucional, experiência internacional, produção intelectual e competências analíticas posiciona-a como uma profissional versátil, estratégica e capaz de transitar entre o jurídico, o administrativo e o empresarial com elevada
+          competência técnica e humana.
+        </p>
       </section>
 
       <!-- CONTATO -->
       <section id="contato" class="py-10 space-y-4">
-        <h2 class="text-2xl font-semibold">Contato</h2>
+        <h2 class="font-display text-2xl font-semibold text-slate-50">Contato</h2>
         <p class="text-slate-300 text-sm md:text-base max-w-3xl leading-relaxed">
-          Disponível para projetos de investigação, colaboração científica, consultoria, participação em grupos de pesquisa e desenvolvimento de disciplinas sobre argumentação jurídica, retórica, IA e reforma do ensino jurídico.
+          Disponível para projetos de investigação, colaboração científica, consultoria, participação em grupos de pesquisa e desenvolvimento de disciplinas sobre argumentação jurídica, retórica, IA e reforma do ensino jurídico, bem como para
+          projetos de análise contratual, organização patrimonial e desenvolvimento de competências de comunicação estratégica.
         </p>
-          
-          <a href="https://taggo.one/dradaradantas"
-            target="_blank"
-            rel="noopener noreferrer">
-            Cartão virtual 
-          </a>
+
+        <a
+          href="https://taggo.one/dradaradantas"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center text-sm tracking-wide text-[#d4af37] border border-[#d4af37]/70 px-4 py-2 rounded-full hover:bg-[#d4af37]/10 transition"
+        >
+          Cartão virtual
+        </a>
       </section>
 
     </main>
